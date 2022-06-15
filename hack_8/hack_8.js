@@ -13,7 +13,14 @@ let foo = {
     role:"admin"
 };
 let result = [];
-
+let contador = 0;
+let values = Object.values(foo)
+for (let i in foo){
+    let aux = [i,values[contador]];
+    result[contador] = aux;
+    contador += 1;
+}
+console.log(result);
 
 //export result
 module.exports = result; 

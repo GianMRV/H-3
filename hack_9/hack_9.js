@@ -21,8 +21,12 @@ let bar = {
     skills:["javascript", "html", "css", "python", "flask", "react", "redux"],
     alias:"Super Alias"
 }
-let result;
+let result = new Object();
+Object.assign(result, foo, bar);
+// Object.assign(destino, fuente 1, fuente 2)
+// Este metodo, copia los elementos de uno o varios objetos fuente, a un objeto destino
 
+console.log(result)
 
 //export result
 module.exports = result; 
